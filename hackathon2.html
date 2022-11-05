@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="hakaton.css">
+    <title>Lista zadań</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Przypomnienie o zadaniach</h1>
+            <button class="btn btn-primary">
+                <spn>Dodaj zadanie</spn>
+            </button>
+        </header>
+    <div class="calendar-week">
+        <h2>Zadania na ten tydzień</h2>
+    </div>
+        <div class="week">
+            <div class="day">
+                <span>Poniedziałek</span>
+                <p><input type="checkbox" name="" id=""> Nazwa taska</p>
+            </div>
+            <div class="day">
+                <span>Wtorek</span>
+                <p><input type="checkbox" name="" id=""> Nazwa taska</p>
+            </div>
+            <div class="day"><span>Środa</span>
+                <p><input type="checkbox" name="" id=""> Nazwa taska</p>
+            </div>
+            <div class="day"><span>Czwartek</span>
+                <p><input type="checkbox" name="" id=""> Nazwa taska</p>
+            </div>
+            <div class="day"><span>Piątek</span>
+                <p><input type="checkbox" name="" id=""> Nazwa taska</p>
+            </div>
+            <div class="day"><span>Sobota</span>
+                <p><input type="checkbox" name="" id=""> Nazwa taska</p>
+            </div>
+            <div class="day"><span>Niedziela</span>
+                <p><input type="checkbox" name="" id=""> Nazwa taska</p>
+            </div>
+        </div>
+
+        <div class="addTask">
+            <h2>Dodaj nowe zadanie</h2>
+            <form action="">
+                <div class="row">
+                    <label for="nameTask" class="col-10 col-form-label">Tytuł zadania</label>
+                    <input type="text" id="nameTask" required class="form-control">
+                </div>
+                <div class="row">
+                    <label for="deadline" class="col-10 col-form-label">Data przypomnienia</label>
+                    <input type="datetime-local" name="deadline" id="deadline" required class="form-control">
+                </div>
+
+                <div class="row">
+                    <label for="description" class="col-10 col-form-label">Opis zadania</label>
+                    <input type="text" id="description" class="form-control">
+                </div>
+                <div class="row">
+                    <label for="category" class="col-10 col-form-label">Kategoria</label>
+                    <input type="text" id="category" class="form-control">
+                </div>
+
+                <div class="row">
+                    <label for="" class="col-5 labels ">Ważność zadania
+                        <span id="hight">Ważne</span>
+                        <input type="checkbox" name="isRepeatTask " id="importance" class="form-check">
+                        <span id="low">Bardzo ważne</span>
+                        <input type="checkbox" name="isRepeatTask " id="importance" class="form-check">
+                    </label>
+
+                </div>
+
+                <div class="row">
+                    <label for="isRepeatTask " class="col-10 col-form-label" id="isRepeatTask_label">Czy zadanie ma
+                        się powtarzać?</label>
+                    <div class="col checkbox">
+                        <input type="checkbox" name="isRepeatTask " id="isRepeatTask" class="form-check">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="" class="col-10 col-form-label">Kiedy ma się powtórzyć</label>
+                    <input type="number" name="" id="" class="form-control">
+                    <div class="col-sm-10">
+
+                    </div>
+
+                </div>
+                <div class="button">
+                    <button type="submit" value="Dodaj nowe zadanie" class="btn btn-primary">Dodaj nowe zadanie</button>
+                    <button type="reset" class="btn btn-danger">Anuluj</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="hackathonReminder2.js"></script>
+</body>
+
+</html>
